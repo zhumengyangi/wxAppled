@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/add_charge/add_charge",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "丶MMM梦",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#303030",
+    "backgroundColor": "#fff",
+    "selectedColor": "#FF6347",
+    "list": [
+      {
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/home1.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/images/add_charge.png",
+        "selectedIconPath": "static/images/add_charge1.png",
+        "pagePath": "pages/add_charge/add_charge",
+        "text": "发动态"
+      },
+      {
+        "iconPath": "static/images/user.png",
+        "selectedIconPath": "static/images/user1.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

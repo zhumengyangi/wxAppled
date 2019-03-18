@@ -1,0 +1,4 @@
+<!--pages/add_charge/add_charge.wxml-->
+<!-- <text>pages/add_charge/add_charge.wxml</text> -->
+<view>这里是add_charge页</view>
+<image src='/static/images/4.jpg'></image>
