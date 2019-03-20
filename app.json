@@ -5,7 +5,7 @@
     "pages/logs/logs",
     "pages/add_charge/add_charge",
     "pages/user/user",
-    "pages/test/text"
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
