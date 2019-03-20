@@ -1,3 +1,5 @@
 <!--pages/user/user.wxml-->
 <view>这里是用户界面</view>
 <image src='/static/images/3.jpg'></image>
+<button class="content" open-type="share">转发</button>
+<button class="content" open-type="feedback">意见中心</button>

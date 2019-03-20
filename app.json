@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/home/home",
-    
     "pages/index/index",
     "pages/logs/logs",
     "pages/add_charge/add_charge",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/test/text"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,7 +15,7 @@
   },
   "tabBar": {
     "color": "#303030",
-    "backgroundColor": "#fff",
+    "backgroudColor": "#fff",
     "selectedColor": "#FF6347",
     "list": [
       {

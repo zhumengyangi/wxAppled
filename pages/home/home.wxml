@@ -1,6 +1,243 @@
 <!--pages/home/home.wxml-->
 <!-- <text>pages/home/home.wxml</text> -->
-<view>这里是home页</view>
-<image src='/static/images/1.bmp'></image>
+<view  class="center">这里是home页</view>
 
-<button click=""></button>
+    <!-- <image class='in-image' src='/static/images/4.jpg' style="width: 200px; height: 200px; background-color: #000000;"></image> -->
+    <!-- scroll-view 可滚动视图区域 -->
+    <!-- <scroll-view scroll-y style='width:500px;'>
+      <view><image src="/static/images/3.jpg"></image></view>
+      <view><image src="/static/images/4.jpg"></image></view>
+      <view><image src="/static/images/1.bmp"></image></view>
+    </scroll-view> -->
+
+     <!-- swiper 滑块视图容器 -->
+    <!-- <swiper
+      indicatorDots='true'
+      autoplay='true'
+      interval='2000'
+      indicator-color="#000000"
+      indicator-dots="true"
+      indicator-active-color="#ffffff"
+      circular='true'
+      vertical='true'
+    >
+      <swiper-item><image style='width:100%;' src='/static/images/3.jpg'/> </swiper-item>
+      <swiper-item><image style='width:100%;' src='/static/images/4.jpg'/> </swiper-item>
+      <swiper-item><image style='width:100%;' src='/static/images/1.bmp'/> </swiper-item>
+    </swiper> -->
+
+    <!-- 点击效果 -->
+    <!-- <view class="center">{{ text }}</view>
+    <view class="center">{{ texts }}</view>
+    <button class="center btn"  id="getName" data-id="100" bind:tap="bindViewTap" bind:longpress="bindViewPress">
+        <image class='btnImg' src='/static/images/setting.png'></image>
+        <view>设置</view>
+    </button> -->
+
+    <!-- 九九乘法表 -->
+    <!-- <view class='con'>
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+        <view style='display:inline-block;width:35px' wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+          <view wx:if="{{j<=i}}">
+            {{i}}*{{j}}={{i*j}}
+          </view>
+        </view>
+      </view>
+    </view> -->
+
+    <!-- 小图标 -->
+    <!-- <block wx:for="{{iconType}}">
+      <icon type="{{item}}" size="40" />
+    </block> -->
+
+  <!-- 进度条 -->
+  <!-- <progress percent="80" show-info  name="a1"/>
+  <progress percent="100" font-size="26px;" name="a2" activeColor="#fff000" backgroundColor="#123516" show-info active bindactiveend="progressETL"/>
+  <text class="center">{{ success }}</text> -->
+
+  <!-- <button class="content" open-type="contact">客服会话</button>
+  <button class="content" open-type="getUserInfo">转发</button>
+  <button class="content" open-type="feedback">意见中心</button> -->
+  
+  <!-- checkbox-group 多项选择器 -->
+  <!-- <checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+    {{item.value}}
+  </label>
+</checkbox-group> -->
+
+<!-- form 提交事件 -->
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section section_gap">
+    <view class="section__title">switch开关按钮</view>
+    <switch name="switch" />
+  </view>
+  
+  <view class="section section_gap">
+    <view class="section__title">slider滑动条</view>
+    <slider name="slider" show-value></slider>
+  </view>
+  
+  <view class="section section_gap">
+    <view class="section__title">radio单选按钮</view>
+    <radio-group name="radio-group">
+      <label>
+        <radio value="radio1" />
+        radio1
+      </label>
+      <label>
+        <radio value="radio2" />
+        radio2
+      </label>
+    </radio-group>
+  </view>
+  
+  <view class="section section_gap">
+    <view class="section__title">checkbox复选按钮</view>
+    <checkbox-group name="checkbox">
+      <label>
+        <checkbox value="checkbox1" />
+        checkbox1
+      </label>
+      <label>
+        <checkbox value="checkbox2" />
+        checkbox2
+      </label>
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button form-type="submit">Submit提交</button>
+    <button form-type="reset">Reset重置</button>
+  </view>
+</form> -->
+
+<!-- <input 
+type="number" 
+password="true"
+ style="border:#d4d4d4 1px solid" 
+ placeholder="请输入内容(纯数字框8位)"
+ maxlength="8"
+ />
+
+ <input 
+type="idcard" 
+ style="border:#d4d4d4 1px solid" 
+ placeholder="请输入内容(身份证)"
+ maxlength="18"
+ />
+
+ <input 
+ style="border:#d4d4d4 1px solid" 
+ placeholder="请输入内容(带小数点)"
+ confirm-type="done"
+ bindconfirm="dones"
+ />
+ <text>{{ aa }}</text> -->
+
+<!-- 选择器 -->
+<!-- <view class="section">
+  <view class="section__title">普通选择器</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">多列选择器</view>
+  <picker
+    mode="multiSelector"
+    bindchange="bindMultiPickerChange"
+    bindcolumnchange="bindMultiPickerColumnChange"
+    value="{{multiIndex}}"
+    range="{{multiArray}}"
+  >
+    <view class="picker">
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">时间选择器</view>
+  <picker
+    mode="time"
+    value="{{time}}"
+    start="09:01"
+    end="21:01"
+    bindchange="bindTimeChange"
+  >
+    <view class="picker">
+      当前选择: {{time}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title">日期选择器</view>
+  <picker
+    mode="date"
+    value="{{date}}"
+    start="2015-09-01"
+    end="2017-09-01"
+    bindchange="bindDateChange"
+  >
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">省市区选择器</view>
+  <picker
+    mode="region"
+    bindchange="bindRegionChange"
+    value="{{region}}"
+    custom-item="{{customItem}}"
+  >
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view> -->
+
+<!--textarea.wxml-->
+<!-- <view class="section">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" />
+</view>
+<view class="section">
+  <textarea
+    placeholder="placeholder颜色是红色的"
+    placeholder-style="color:red;"
+  />
+</view>
+<view class="section">
+  <textarea placeholder="这是一个可以自动聚焦的textarea" auto-focus />
+</view>
+<view class="section">
+  <textarea placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+  </view>
+</view>
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="form 中的 textarea" name="textarea" />
+    <button form-type="submit">提交</button>
+  </form>
+</view> -->
+<map
+  id="map"
+  longitude="113.324520"
+  latitude="23.099994"
+  scale="14"
+  controls="{{controls}}"
+  bindcontroltap="controltap"
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  polyline="{{polyline}}"
+  bindregionchange="regionchange"
+  show-location
+  style="width: 100%; height: 300px;"
+></map>

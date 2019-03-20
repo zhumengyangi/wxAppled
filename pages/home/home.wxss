@@ -1,1 +1,29 @@
 /* pages/home/home.wxss */
+.con{
+  font-size: 8px
+}
+
+/* 居中 */
+.center{
+ display:flex;                    
+ justify-content: center;        
+}
+.btn {
+   width: 30%;
+  margin-top: 20rpx;
+  background-color:slategrey;
+  color: white;
+  border-radius: 78rpx; 
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btn::after {
+  border-radius: 98rpx;
+}
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
